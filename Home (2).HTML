@@ -1,0 +1,152 @@
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-md-2 col-sm-12 col-xs-12">
+           <nav id="navbar">
+               <h3>Scripting Solutions</h3>
+               <!--content stacking for smaller screens-->
+               <ul class="nav nav-pills nav-stacked">
+                <!--internal linking to the respective sections-->
+                   <a class="nav-link" href="#Introduction" rel="internal">
+                       <li>Introduction</li>
+                   </a>
+                   <a class="nav-link" href="#What_you_should_already_know" rel="internal">
+                       <li>What you should already know</li>
+                   </a>
+                   <a class="nav-link" href="#About_Topic" rel="internal">
+                       <li>About the topic</li>
+                   </a>
+                   <a class="nav-link" href="#Topic_1" rel="internal">
+                       <li>Topic 1</li>
+                   </a>
+                   <a class="nav-link" href="#Topic_2" rel="internal">
+                       <li>Topic 2</li>
+                   </a>
+                   <a class="nav-link" href="#Topic_3" rel="internal">
+                       <li>Topic 3</li>
+                   </a>
+                   <a class="nav-link" href="#Topic_4" rel="internal">
+                       <li>Topic 4</li>
+                   </a>
+                </ul>
+           </nav>
+       </div>
+       <div class="col-md-10 col-sm-12 col-xs-12">
+           <main id="main-doc">
+               <section class="main-section" id="Introduction" >  
+                   <h3 style = "background: black; color: white">Introduction</h3>
+                   <article>
+                   <p>Lets start of by saying, this is a Paid course. Some of the introductions about this topic that we are going to discussed include,
+                  exploit solving, problem solving code, and relative ideas. Each sections is going to go over each of these topics in depth so all attention is required. All website links will be located at the bottom of the site.
+                       </article>
+               </section>
+               <section class="main-section" id="What_you_should_already_know">
+                   <h3 style = "background: black; color: white">What you should already know</h3>
+                   <article>
+                       <p>Background information before getting into the topic:</p>
+                        <!--creating list using html-->
+                       <li>lua & LuaU</li>
+                       <li>know how to use Visual Code</li>
+                       <p>Any pc works. Don't use mobile.</p>
+                       </artice>
+               </section>
+               <section class="main-section" id="About_Topic">
+                   <h3 style = "background: #00BFFF; color: white">About topic</h3>
+                   <article>
+                       <p>
+                        We will be using SYN as a tool hooker to start which will allow us to generate a number of decompiled scripts from
+                        remotly any game known.
+                        </p>
+                       <p>
+                        Please note that when using the tool hooker it can be unstable if you use the setting called auto-luanch. Turn it off
+                        if problem persist.
+                        </p>
+                       <p>
+                        Futher down the documentation I will teach you how to make your own functional script. With cool features. You can make it look fancy later on down the line.
+                        </p>
+                   </article>
+               </section>
+               <section class="main-section" id="Topic_1">
+                   <h3 style = "background: black; color: white">Topic 1</h3>
+                   <article>
+                       <h4><b>Getting started with the actual debugging documentation</b></h4>
+                         <p>  SYN has built in debugging tool features allowing us to fully utilies the surrounding. Today we are going to develop
+                          a simple auto clicker using SYNs built in keyboard input functions. To start off head to SYNs to get their list of keyboard
+                          inputs. On the topic of keyboard inputs, microsoft has documentation for Virtual-Key codes. This will allow us to translate code to key
+                          number, so we know excatly what keys we are going to be pressing. For example; left mouse button translated would be "0x01" if you put this inside SYN it will automatically press the left mouse button for you without having any person near the keyboard. Using these key inputs we can 
+                          make simple macros for simple tasks that are not needing for anyone to save time and resources.
+                          <br></br>
+                          After all is done select any game to connect to and
+                          start by making a while true loop. Put the keyboard sample code into the loop and see what happens. What should be happening is your mouse goes
+                          crazy and start clicking everything. If this didn't work then make sure you reread this section. Know that the downside of this is that you cannot stop the loop as you should already know. But the good side of this is that we can bypass having to grab remotes from Remote Spy, and having those remotes as the only form of running a task. Instead we can rely on SYN as the clicker. Note that we may be able to get away with this but if we do something like this it may start to bug out and click guis which we don't want to do. We also have to make it user friendly to sell to other companies. It's important that you understand why we are going through this task, if you already know most about SYNs Function, then go ahead and skip these steps and head over to the next topic.
+                          <br></br>
+                                <input type="text" value="if syn then print('using syn') end"  id="myInput">
+                                <button onclick="myFunction()">Copy text</button>
+                                    <script>
+                                    function myFunction() {
+                                      // Get the text field
+                                      var copyText = document.getElementById("myInput");
+
+                                      // Select the text field
+                                      copyText.select();
+                                      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                                      // Copy the text inside the text field
+                                      navigator.clipboard.writeText(copyText.value);
+                                      
+                                      // Alert the copied text
+                                      alert("Copied the text: " + copyText.value);
+                                    }
+                                    </script>
+                          </p>
+                       <code>Tip: Don't steal source codes and rename them to your own. This is illegal and is also known as Plagiarism.
+                       </code>
+                   </article>
+               </section>
+              <section class="main-section" id="Topic_2">
+                   <h3 style = "background: black; color: white">Topic 2</h3>
+                   <article>
+                       <h4><b>Detecting Syn</b></h4>
+                         <p>  
+                             How to detect if a user is using SYN. Now when you release your own scripts for users all around the world to download, you may want to find out if they are actaully using SYN for your scripts. If you don't need to then you fine. The reason why we would want to find out if a user is using SYN is to make sure we can use SYNs functions on them. If they don't have SYN then we cant apply SYNs functions to their tool hooker. Meaning no more functional key inputes. Now to detect if a user is using it, all it takes is a small single line of code to figure out. Sample: if syn then. Thats it, if you still dont understand, I will format it the correct way you should see it inside of it down at Figure 1, shown below. Now we can use this so that if the user is using syn print("syns detected script will work") so we can give the user a heads up that our script will not function properly without syn. You can either destroy the script when the user executes it so that they don't go through the trouble of having to figure out if the function work or not. Or you can make a config for each user if they have syn or don't. Which we will learn in another topic on how to make configures for each user and copy it to their own executor so that it saves their script settings.
+                          </p>
+                       <code>Tip: Never forget a wait() inside a loop.
+                       </code>
+                   </article>
+               </section>
+               <section class="main-section" id="Topic_3">
+                   <h3 style = "background: black; color: white">Topic 3</h3>
+                   <article>
+                       <h4><b>Developing a Hub</b></h4>
+                         <p>  
+                            Now the main idea to a Hub is think of it like a compact tool editing software. The main focus in this topic is, how to setup a loadstring, how to create a github repo for your hub so you can easily update it without users having the copy the same code over and over again, and how to obfuscate your code so no one steals it. Now obfuscating is a whole different topic I am not willing to go over because I don't have the patience for it. But if you would like to learn what obfuscating is here are some alternative links for learning down below. Besides that what you wanna do is go ahead and find a hub to use. It doesn't need to be good looking it just need to work I will add a Github of a lot of hubs you can you for yours. If you don't know where to begin when developing a UI no problem I will make a github with a sample of the UI we are going to use for this project if you want to use your own that fine, just make sure it have the same syntax or it may get a little bit confusing for some parts of it. Open the sample UI and scan over it and try to identify some features you already know. Put the sample UI in your executor and execute it. You should see a black box with tabs on the side. This is the UI formally know as Wallys UI.
+                                <br></br>
+                                <a href="https://www.techtarget.com/searchsecurity/definition/obfuscation#:~:text=Obfuscation%20in%20computer%20code%20uses,true%20content%20of%20the%20message." target="_blank">My Github and Sample UI Lib Here | https://github.com/ufouzzed?tab=repositories</a> 
+                                <br></br>
+                                <a href="https://www.techtarget.com/searchsecurity/definition/obfuscation#:~:text=Obfuscation%20in%20computer%20code%20uses,true%20content%20of%20the%20message." target="_blank">learn how obfuscating works | www.techtarget.com</a> 
+                                <br></br>
+                                <a href="https://www.talend.com/resources/data-obfuscation/" target="_blank">data obfuscation |  www.talend.com</a> 
+                          </p>
+                       <code>Tip: Remember to save your stuff
+                       </code>
+                   </article>
+               </section>
+               <section class="main-section" id="Topic_4">
+                   <h3 style = "background: black; color: white">Topic 4</h3>
+                   <article>
+                       <h4><b>Saving Script Configurations To The User PC</b></h4>
+                         <p>
+                             Saving the scripts Configuratins to the user pc would not only be usefull for the user because it saves their configurations but it would also help use make something called a whitelist. Whitelists is what we are going to eventaully talk about in the next Topic. 
+                          </p>
+                       <code>Tip: Taking breaks is very important while writing code. Refresh your brain if your stuck.
+                   </article>
+               </section>
+           </main>
+       </div>
+   </div>
+</div>
+</html>
